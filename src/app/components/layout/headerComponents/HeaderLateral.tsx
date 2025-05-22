@@ -30,7 +30,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     toggleDesk();
     router.push(ruta);
   };
-  const iconColor = "#9f6c04";
+  const iconColor = "#e8a81e";
+  
 
   const menu = [
     {
@@ -38,7 +39,7 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
         <IconHome
           className="mr-2"
           size={isXs ? 30 : 22}
-          color={isDark ? "#47AB8D" : "#9f6c04"}
+          color={isDark ? "#47AB8D" : iconColor}
         />
       ),
       label: "Inicio",
@@ -97,6 +98,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
       href: "/",
     },
   ];
+
+
   return (
     <>
       {menu.map((item, index) => (
@@ -106,14 +109,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
             className="flex p-2  mt-3 rounded-md border border-transparent py-2 px-4 text-center  text-sm hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-125 group-hover:w-full  focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             onClick={() => handleClick(item.href)}
           >
-            {" "}
-            <Divider
-              orientation="vertical"
-              mr={4}
-              size="md"
-              color={isDark ? "#15803D" : "#7f5703"}
-              visibleFrom="sm"
-            />
+     
+         
             {item.icon}
             {isDark}
             <Title order={isXs ? 3 : 5} c={"white"}>

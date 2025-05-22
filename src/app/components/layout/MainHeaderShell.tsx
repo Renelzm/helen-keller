@@ -35,13 +35,13 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
             backgroundColor: theme.colors.blue[6], border: 0, // Ensure a single color is used
           },
           navbar: {
-            backgroundColor: !isDark ? "#CA8A04" : theme.colors.dark[7], boxShadow: "inset 0px 10px 20px 0 rgba(20, 20, 20, 0.2)"// Dark mode conditional styling
+            backgroundColor: !isDark ? "#153D80" : theme.colors.dark[7], boxShadow: "inset 0px 10px 20px 0 rgba(20, 20, 20, 0.2)",  borderColor: "#426caf"// Dark mode conditional styling
           },
           main: {
             backgroundColor: '', // Use a single valid color for the background
           },
           footer: {
-            backgroundColor: "#153d80", // Static background color for the footer
+            backgroundColor: "#153d80" , borderColor: "#426caf" // Static background color for the footer
           },
         })}
       >
