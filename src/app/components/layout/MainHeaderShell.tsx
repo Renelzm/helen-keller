@@ -21,7 +21,7 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
     <>
   
       <AppShell
-        header={{ height: 65 }}
+        header={{ height: 70 }}
         navbar={{
           width: 200,
           breakpoint: "sm",
@@ -73,7 +73,7 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
         <AppShell.Main>
          
 
-          <div className={ isXs ? "mt-40" : "mt-20"} >{children} </div>
+          <div className={ isXs ? "mt-3" : "mt-30"} >{children} </div>
         </AppShell.Main>
         <AppShell.Footer p="xs" >
           <FooterCentered />

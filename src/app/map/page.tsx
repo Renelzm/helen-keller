@@ -1,8 +1,11 @@
 import { AspectRatio, Divider, Title } from '@mantine/core';
+import { NavigationBarNoLogo } from '../components/landingPageComponents/navigationBarNoLogo';
 
 export default function page() {
   return (
     <>
+            <NavigationBarNoLogo />
+    
   <Divider my="xs" label={<Title order={2}>Ubicación</Title>} labelPosition="center" />
     <AspectRatio ratio={16 / 9} className=' p-10'>
       <iframe

@@ -3,7 +3,7 @@ import { ActionIcon, AppShell, Burger,  Group, Title } from "@mantine/core";
 import { useMantineColorScheme } from "@mantine/core";
 import { IconMoonFilled, IconSun } from "@tabler/icons-react";
 import Image from "next/image";
-import { NavigationBar } from "./NavigationBar";
+// import { NavigationBar } from "./NavigationBar";
 import { useAppSelector } from '@/store';
 import Link from 'next/link';
 import { useMediaQuery } from "@mantine/hooks";
@@ -39,8 +39,12 @@ export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
      {/* hiddenFrom="sm" */}
         <Image  src={`/helen-keller/59e76b0d8c18a.png`} width={60} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200 ml-7" />
         <Link href={'/'}>
-        <Title order={isXs ? 5 : 3} c="#effee7" td="underline" fw={900} >{nombre}</Title>
+        <Title order={isXs ? 5 : 3} c="#effee7"  fw={900} 
+         className="font-fun drop-shadow-md text-green-100"
+        >{nombre}</Title>
+
         </Link> 
+       
   
         <ActionIcon
           variant="outline"
@@ -56,12 +60,14 @@ export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
           )}
         </ActionIcon>
  
+
       
         
       </Group>
-      { !isDark ? <div style={{ backgroundColor: "#153d80", color:'white', position: "relative"}} className=" text-center">Juntos construimos la alegría de aprender</div> : ""}
+
+      {/* { !isDark ? <div style={{ backgroundColor: "#153d80", color:'white', position: "relative"}} className=" text-center">Juntos construimos la alegría de aprender</div> : ""} */}
       {/* <div style={{ backgroundColor: "#153d80", color:'white', position: "relative"}} className=" text-center">Juntos construimos la alegría de aprender</div> */}
-      <NavigationBar/> 
+      {/* <NavigationBar/>  */}
 
     </AppShell.Header>
 

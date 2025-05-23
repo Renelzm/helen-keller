@@ -57,14 +57,19 @@ const documents = [
 const initialState: GeneralAppState = {
     nombreInstitucion: 'CE Helen Keller',
     banners: [
-      {
-        nombreArchivo: 'helen-keller/bannerhellenkeller2.jpg',
+        {
+        nombreArchivo: 'helen-keller/jobs.jpg',
         alt: 'Bienvenida a estudiantes'
       },
       {
-        nombreArchivo: 'helen-keller/bannerhellenkeller.jpg',
+        nombreArchivo: 'helen-keller/girls.jpg',
+        alt: 'Bienvenida a estudiantes'
+      },
+      {
+        nombreArchivo: 'helen-keller/boys.jpg',
         alt: 'Bienvenida a estudiantes'
       }
+
   ],
   niveles: [
     {

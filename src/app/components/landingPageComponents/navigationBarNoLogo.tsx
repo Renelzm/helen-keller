@@ -1,14 +1,15 @@
+'use client'
+
 import { Container, Tabs, Title } from "@mantine/core";
 import { IconBooks, IconChalkboard, IconPackages } from "@tabler/icons-react";
 import React from "react";
 import classes from './HeaderTabs.module.css';
 import Link from "next/link";
-import Image from "next/image";
 
-export const NavigationBar = () => {
+export const NavigationBarNoLogo = () => {
   return (
-    <div className={classes.header}>
-     <div className=" flex text-center w-auto justify-center mb-10"><Image  src={`/helen-keller/59e76b0d8c18a2.png`} width={200} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200" /></div>  
+    <div className={`${classes.header} mb-7`} >
+     
     <Container  size="md">
       
 

@@ -1,10 +1,12 @@
 import { IconMail, IconMessageCircle } from "@tabler/icons-react";
+import { NavigationBarNoLogo } from "../components/landingPageComponents/navigationBarNoLogo";
 
   
 export default function page() {
   return (
     <>
     <div className="grid sm:grid-cols-1 items-start gap-16 p-4 mx-auto max-w-4xl font-[sans-serif]">
+        <NavigationBarNoLogo />
             <div>
                 <h1 className=" text-3xl font-extrabold">Contáctate con nosotros</h1>
                 <p className="text-sm  mt-4">Estamos comprometidos con ofrecer la mejor experiencia educativa. Si tienes alguna consulta, duda o necesitas información adicional, no dudes en contactarnos. Estamos aquí para ayudarte.</p>

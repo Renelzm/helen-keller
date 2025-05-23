@@ -13,7 +13,7 @@ export const CarouselSlider = () => {
      { banners?.length != 0 ? 
      
      <Container  size="70%">
-
+         
     <Carousel  withIndicators align={'center'}>
       <Carousel.Slide>
       <Image src={`https://si.nccdn.net/page_images/children_crafting-1920x948.jpg`} 
