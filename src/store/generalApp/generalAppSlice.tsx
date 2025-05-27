@@ -55,7 +55,7 @@ const documents = [
 
 
 const initialState: GeneralAppState = {
-    nombreInstitucion: 'CE Helen Keller',
+    nombreInstitucion: 'Helen Keller',
     banners: [
         {
         nombreArchivo: 'helen-keller/jobs.jpg',

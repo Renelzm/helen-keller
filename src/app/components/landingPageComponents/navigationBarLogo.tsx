@@ -10,7 +10,7 @@ import Image from "next/image";
 export const NavigationBarLogo = () => {
   return (
     <div className={`${classes.header} mb-7`} >
-     <div className=" flex text-center w-auto justify-center mb-8"><Image  src={`/helen-keller/59e76b0d8c18a2.png`} width={200} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200" /></div>  
+     <div className=" flex text-center w-auto justify-center "><Image  src={`/helen-keller/helenkellerlogo2.png`} width={700} height={400} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200" /></div>  
     <Container  size="md">
       
 

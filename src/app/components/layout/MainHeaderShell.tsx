@@ -35,7 +35,7 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
             backgroundColor: theme.colors.blue[6], border: 0, // Ensure a single color is used
           },
           navbar: {
-            backgroundColor: !isDark ? "#153D80" : theme.colors.dark[7], boxShadow: "inset 0px 10px 20px 0 rgba(20, 20, 20, 0.2)",  borderColor: "#426caf"// Dark mode conditional styling
+            backgroundColor: !isDark ? "white" : theme.colors.dark[7], boxShadow: "inset 0px 3px 5px 0 rgba(20, 10, 20, 0.2)",  borderColor: "white"// Dark mode conditional styling
           },
           main: {
             backgroundColor: '', // Use a single valid color for the background

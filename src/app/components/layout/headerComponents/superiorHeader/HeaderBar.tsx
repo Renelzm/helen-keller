@@ -29,8 +29,8 @@ export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
       <Group
         h="100%"
         px="md"
-        className={`${isDark ? "bg-yellow-600" : "bg-green-700"}`}
-        style={{ position: "relative", boxShadow: isDark ? 'inset 0px -4px 6px #845902' : 'inset 0px -4px 6px #044c1e' }} 
+        className={`${isDark ? "bg-yellow-600" : "bg-yellow-500"} `}
+        style={{ position: "relative", boxShadow: isDark ? 'inset 0px -4px 6px #845902' : 'inset 0px -2px 9px #845902' }} 
         // #CA8A04
       >
             
@@ -39,8 +39,8 @@ export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
      {/* hiddenFrom="sm" */}
         <Image  src={`/helen-keller/59e76b0d8c18a.png`} width={60} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200 ml-7" />
         <Link href={'/'}>
-        <Title order={isXs ? 5 : 3} c="#effee7"  fw={900} 
-         className="font-fun drop-shadow-md text-green-100"
+        <Title order={isXs ? 5 : 3} c=""  fw={900} 
+         className="font-fun drop-shadow-md text-white"
         >{nombre}</Title>
 
         </Link> 

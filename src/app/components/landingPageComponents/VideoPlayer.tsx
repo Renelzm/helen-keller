@@ -10,7 +10,7 @@ interface VideoPlayerProps {
 const VideoPlayer = ({ videoSrc } : VideoPlayerProps)  => {
 const isXs = useMediaQuery('(max-width: 576px)');
   return (
-    <section className={`relative w-full overflow-hidden mb-24 ${ !isXs ?  "min-h-dvh" : "min-h-96"}`}>
+    <section className={`relative w-auto overflow-hidden mb-24 ${ !isXs ?  "min-h-svh" : "min-h-96"}`}>
       <div className="absolute top-0 left-0 w-full h-full z-10">
         <iframe
           className="w-full h-full "

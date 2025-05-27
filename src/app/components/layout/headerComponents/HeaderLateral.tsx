@@ -30,7 +30,7 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     toggleDesk();
     router.push(ruta);
   };
-  const iconColor = "#e8a81e";
+  const iconColor = "#47ab8d";
   
 
   const menu = [
@@ -106,14 +106,14 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
         <div key={index}>
          
           <button
-            className="flex p-2  mt-3 rounded-md border border-transparent py-2 px-4 text-center  text-sm hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-125 group-hover:w-full  focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="flex p-2  mt-3 rounded-md border border-transparent py-2 px-4 text-center text-sm hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-125 group-hover:w-full  focus:bg-slate-100 active:bg-slate-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             onClick={() => handleClick(item.href)}
           >
      
          
             {item.icon}
-            {isDark}
-            <Title order={isXs ? 3 : 5} c={"white"}>
+         
+            <Title order={isXs ? 3 : 5} c={ isDark ? "white" : "#797864" } >
               {item.label}
             </Title>
           </button>
@@ -140,8 +140,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
           }
           className="flex items-center p-1.5 mt-3 rounded-lg border py-1 px-3 text-center text-xs hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-110 group-hover:w-full focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
-          <IconDoorEnter color="white" className=" mr-2" />
-          <Title order={isXs ? 3 : 5} c={"white"}>
+          <IconDoorEnter color="#797864" className=" mr-2" />
+          <Title order={isXs ? 3 : 5} c={isDark ? "white" : "#797864"}>
             Alumnos
           </Title>
         </button>
@@ -152,8 +152,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
           }
   className="flex items-center p-1.5 mt-3 rounded-lg border py-1 px-3 text-center text-xs hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-110 group-hover:w-full focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           >
-          <IconCash color="white" className=" mr-2" />
-          <Title order={isXs ? 3 : 6} c={"white"}>
+          <IconCash color="#797864" className=" mr-2" />
+          <Title order={isXs ? 3 : 6} c={ isDark ? "white" : "#797864" }>
             Pagos-Uno
           </Title>
         </button>
