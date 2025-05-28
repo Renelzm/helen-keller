@@ -31,7 +31,7 @@ export function FooterCentered() {
         { isXs ? "" : <Group className={classes.links}>{items}</Group>}
         
 
-        <Group gap="md" justify="flex-end" wrap="nowrap" >
+        <Group gap="lg" justify="flex-end" wrap="nowrap" >
           <ActionIcon size="lg" variant="default" radius="xl" bg={"white"}>
             <IconBrandFacebook style={{ width: rem(18), height: rem(18) }} stroke={1.5}  color='gray'/>
           </ActionIcon>

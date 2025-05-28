@@ -21,27 +21,28 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
     <>
   
       <AppShell
-        header={{ height: 70 }}
+        header={{ height: 60 }}
         navbar={{
-          width: 200,
+          width: 230,
           breakpoint: "sm",
           collapsed: { mobile: !opened, desktop: desktopOpened },
           
         }}
-        footer={{ height: 70 }}
+        footer={{ height: 55 }}
         padding="md"
         styles={(theme) => ({
           header: {
             backgroundColor: theme.colors.blue[6], border: 0, // Ensure a single color is used
           },
           navbar: {
-            backgroundColor: !isDark ? "white" : theme.colors.dark[7], boxShadow: "inset 0px 3px 5px 0 rgba(20, 10, 20, 0.2)",  borderColor: "white"// Dark mode conditional styling
+            backgroundColor: !isDark ? "white" : theme.colors.dark[7], 
+            boxShadow: "inset 0px 3px 5px 0 rgba(20, 10, 20, 0.2)",  borderColor: "white" , height: isXs ? "100%" : ''// Dark mode conditional styling
           },
           main: {
             backgroundColor: '', // Use a single valid color for the background
           },
           footer: {
-            backgroundColor: "#153d80" , borderColor: "#426caf" // Static background color for the footer
+            backgroundColor: "#153d80" , borderColor: "#153d80"// Static background color for the footer
           },
         })}
       >

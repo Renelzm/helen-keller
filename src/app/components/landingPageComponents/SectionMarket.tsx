@@ -4,6 +4,7 @@ import { Button } from '@mantine/core'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import VideoPlayer from './VideoPlayer'
 
 
 
@@ -38,6 +39,7 @@ export const SectionMarket = () => {
       <Image className="bg-cover rounded-xl" src="/helen-keller/unoi-img.jpg" alt="" width={700} height={50} />
     </div>
   </div>
+      <VideoPlayer  videoSrc="https://www.youtube.com/embed/RqiBROxsLpo?si=f5mcuM4Ufkq_3m0f"/>
 
   {/* DATOS DE NIVELES EEDUCATIVOS */}
   <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 container mx-auto">

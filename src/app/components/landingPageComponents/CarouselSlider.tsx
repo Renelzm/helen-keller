@@ -12,7 +12,7 @@ export const CarouselSlider = () => {
     <>
      { banners?.length != 0 ? 
      
-     <Container  size="80%">
+     <Container  size="95%">
          
     <Carousel  withIndicators align={'center'}>
       {/* <Carousel.Slide>

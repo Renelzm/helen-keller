@@ -37,13 +37,13 @@ export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
 
         <Burger opened={opened} onClick={isXs ? toggle : toggleDesk}  size="sm" color="white" />
      {/* hiddenFrom="sm" */}
-        <Image  src={`/helen-keller/59e76b0d8c18a.png`} width={60} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200 ml-7" />
-        <Link href={'/'}>
-        <Title order={isXs ? 5 : 3} c=""  fw={900} 
+        {/* <Image  src={`/helen-keller/59e76b0d8c18a.png`} width={60} height={40} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200 ml-auto" /> */}
+        {/* <Link href={'/'}>
+        <Title order={isXs ? 5 : 3} c=""  fw={700} 
          className="font-fun drop-shadow-md text-white"
-        >{nombre}</Title>
+        >CE {nombre}</Title>
 
-        </Link> 
+        </Link>  */}
        
   
         <ActionIcon

@@ -23,9 +23,9 @@ const isXs = useMediaQuery('(max-width: 576px)');
       </div>
       <div className="relative z-20 flex items-center justify-center h-full">
         <Container>
-          <h1 className="text-4xl font-bold text-white">Bienvenidos</h1>
+          {/* <h1 className="text-4xl font-bold text-white">Bienvenidos</h1> */}
           <p className="text-lg text-white mt-4">
-            Sistema de enseñanza especializada Helen Keller.
+            Sistema UNOi de enseñanza especializada Helen Keller
           </p>
          
         </Container>

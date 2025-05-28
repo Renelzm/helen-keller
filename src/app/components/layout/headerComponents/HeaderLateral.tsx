@@ -30,15 +30,15 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     toggleDesk();
     router.push(ruta);
   };
-  const iconColor = "#47ab8d";
+  const iconColor = "#428974"; // Default icon color for light mode
   
 
   const menu = [
     {
       icon: (
         <IconHome
-          className="mr-2"
-          size={isXs ? 30 : 22}
+          className="mr-3"
+          size={isXs ? 35 : 32}
           color={isDark ? "#47AB8D" : iconColor}
         />
       ),
@@ -48,8 +48,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     {
       icon: (
         <IconUsersGroup
-          className="mr-2"
-          size={isXs ? 30 : 22}
+          className="mr-3"
+          size={isXs ? 35 : 32}
           color={iconColor}
         />
       ),
@@ -59,8 +59,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     {
       icon: (
         <IconBuildingEstate
-          className="mr-2"
-          size={isXs ? 30 : 22}
+          className="mr-3"
+          size={isXs ? 35 : 32}
           color={iconColor}
         />
       ),
@@ -70,7 +70,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
 
     {
       icon: (
-        <IconMap2 className="mr-2" size={isXs ? 30 : 22} color={iconColor} />
+        <IconMap2 className="mr-3" 
+        size={isXs ? 35 : 32} color={iconColor} />
       ),
       label: "Mapa",
       href: "/map",
@@ -78,8 +79,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     {
       icon: (
         <IconMessageDots
-          className="mr-2"
-          size={isXs ? 30 : 22}
+          className="mr-3"
+          size={isXs ? 35 : 32}
           color={iconColor}
         />
       ),
@@ -89,8 +90,8 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
     {
       icon: (
         <IconBallpenFilled
-          className="mr-2"
-          size={isXs ? 30 : 22}
+          className="mr-3"
+          size={isXs ? 35 : 32}
           color={iconColor}
         />
       ),
@@ -102,18 +103,19 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
 
   return (
     <>
+         <div className=" flex text-center w-auto justify-center p-4"><Image  src={`/helen-keller/helenkellerletras.png`} width={200} height={400} alt="Logo"  style={{ cursor: 'pointer' }}  className="hover:opacity-75 transition-opacity duration-200" /></div>
       {menu.map((item, index) => (
-        <div key={index}>
+        <div key={index} >
          
           <button
-            className="flex p-2  mt-3 rounded-md border border-transparent py-2 px-4 text-center text-sm hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-125 group-hover:w-full  focus:bg-slate-100 active:bg-slate-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="flex p-3  mt-3 rounded-md border border-transparent py-2 px-4 items-center hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-125 group-hover:w-full  focus:bg-slate-100 active:bg-slate-50 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             onClick={() => handleClick(item.href)}
           >
      
          
             {item.icon}
          
-            <Title order={isXs ? 3 : 5} c={ isDark ? "white" : "#797864" } >
+            <Title order={isXs ? 3 : 5} c={ isDark ? "white" : "#5b5b55" }  >
               {item.label}
             </Title>
           </button>
@@ -125,11 +127,11 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
         size="xl"
         label={
           <Image
-            src="/helen-keller/uno_logo_blanco.png"
+            src="/helen-keller/uno_logo_color.png"
             alt=""
-            width={40}
+            width={50}
             height={30}
-            className="mr-2 align-middle justify-center text-center mt-1"
+            className=" align-middle justify-center text-center mt-1"
           />
         }
       />
@@ -141,7 +143,7 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
           className="flex items-center p-1.5 mt-3 rounded-lg border py-1 px-3 text-center text-xs hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-110 group-hover:w-full focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         >
           <IconDoorEnter color="#797864" className=" mr-2" />
-          <Title order={isXs ? 3 : 5} c={isDark ? "white" : "#797864"}>
+          <Title order={isXs ? 3 : 5} c={isDark ? "white" : "#5b5b55"}>
             Alumnos
           </Title>
         </button>
@@ -153,7 +155,7 @@ export const HeaderLateral = ({ toggle, toggleDesk, isDark }: Props) => {
   className="flex items-center p-1.5 mt-3 rounded-lg border py-1 px-3 text-center text-xs hover:opacity-90 max-w-xs transition duration-300 ease-in-out hover:scale-110 group-hover:w-full focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           >
           <IconCash color="#797864" className=" mr-2" />
-          <Title order={isXs ? 3 : 6} c={ isDark ? "white" : "#797864" }>
+          <Title order={isXs ? 3 : 6} c={ isDark ? "white" : "#5b5b55" }>
             Pagos-Uno
           </Title>
         </button>

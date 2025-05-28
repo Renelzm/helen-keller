@@ -57,12 +57,12 @@ const documents = [
 const initialState: GeneralAppState = {
     nombreInstitucion: 'Helen Keller',
     banners: [
-        {
-        nombreArchivo: 'helen-keller/jobs.jpg',
-        alt: 'Bienvenida a estudiantes'
-      },
       {
         nombreArchivo: 'helen-keller/girls.jpg',
+        alt: 'Bienvenida a estudiantes'
+      },
+        {
+        nombreArchivo: 'helen-keller/jobs.jpg',
         alt: 'Bienvenida a estudiantes'
       },
       {
