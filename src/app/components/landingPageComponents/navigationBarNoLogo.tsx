@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export const NavigationBarNoLogo = () => {
   return (
-    <div className={`${classes.header} mb-7`} >
+    <div className={`${classes.header} mb-3`} >
      
     <Container  size="md">
       

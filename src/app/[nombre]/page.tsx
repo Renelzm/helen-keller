@@ -1,6 +1,7 @@
 
 import { GeneralNiveles } from "../components/pages/GeneralNiveles";
 import { ButtonsData } from "../components/pages/ButtonsData";
+import { NavigationBarNoLogo } from "../components/landingPageComponents/navigationBarNoLogo";
 
 
 const nivelesRender = [
@@ -27,6 +28,7 @@ export default function NamePage({ params }: { params: { nombre: string } }) {
     <div >
 
    
+          <NavigationBarNoLogo />
   
       <ButtonsData param={datos.title}/>    
       <GeneralNiveles param={datos.title}/>

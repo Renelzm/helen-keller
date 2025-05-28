@@ -3,9 +3,9 @@
 import { AppShell, useMantineColorScheme } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import { ReactNode } from "react";
-import { HeaderBar } from "./headerComponents/superiorHeader/HeaderBar";
-import { FooterCentered } from "./headerComponents/footer/footerCentered";
-import { HeaderLateral } from './headerComponents/HeaderLateral';
+import { HeaderBar } from "./mainShellComponents/superiorHeader/HeaderBar";
+import { FooterCentered } from "./mainShellComponents/footer/footerCentered";
+import { HeaderLateral } from './mainShellComponents/lateralHeader/HeaderLateral';
 
 interface HeaderShellProps {
   children: ReactNode;

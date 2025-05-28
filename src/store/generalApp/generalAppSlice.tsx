@@ -30,6 +30,13 @@ interface documents {
 }
 
 const documents = [
+    {
+    nombreArchivo: 'documento3.pdf',
+    nombre: 'Oferta Educativa',
+    icon: <IconSchool />,
+    color: "#a9004f",
+ 
+  },
   {
     nombreArchivo: 'documento1.pdf',
     nombre: 'Inscripciones',
@@ -44,13 +51,7 @@ const documents = [
     icon: <IconArticle />,
     color: "#049158",
   },
-  {
-    nombreArchivo: 'documento3.pdf',
-    nombre: 'Oferta Educativa',
-    icon: <IconSchool />,
-    color: "#a9004f",
- 
-  }
+
 ]
 
 
