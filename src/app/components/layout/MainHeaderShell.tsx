@@ -28,7 +28,7 @@ export const MainHeaderShell = ({ children }: HeaderShellProps) => {
           collapsed: { mobile: !opened, desktop: desktopOpened },
           
         }}
-        footer={{ height: 55 }}
+        footer={{ height: 50 }}
         padding="md"
         styles={(theme) => ({
           header: {
