@@ -1,11 +1,11 @@
 
-import { ActionIcon, AppShell, Burger,  Group, Title } from "@mantine/core";
+import { ActionIcon, AppShell, Burger,  Group } from "@mantine/core";
 import { useMantineColorScheme } from "@mantine/core";
 import { IconMoonFilled, IconSun } from "@tabler/icons-react";
-import Image from "next/image";
+// import Image from "next/image";
 // import { NavigationBar } from "./NavigationBar";
-import { useAppSelector } from '@/store';
-import Link from 'next/link';
+// import { useAppSelector } from '@/store';
+// import Link from 'next/link';
 import { useMediaQuery } from "@mantine/hooks";
 
 
@@ -19,7 +19,7 @@ type Props = {
 export const HeaderBar = ({ opened, toggle, toggleDesk }: Props) => {
   const { colorScheme, toggleColorScheme  } = useMantineColorScheme();
   const isDark = colorScheme === "dark";
-  const nombre = useAppSelector((state) => state.AppState.nombreInstitucion)
+  // const nombre = useAppSelector((state) => state.AppState.nombreInstitucion)
   const isXs = useMediaQuery("(max-width: 576px)");
   return (
     <>
