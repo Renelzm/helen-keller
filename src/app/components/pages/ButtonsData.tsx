@@ -50,7 +50,7 @@ export const ButtonsData = ({ param }: Props) => {
                
                   <Button
                     variant="outline"
-                    onClick={() => window.open("/mi-documento.pdf")}
+                    onClick={() => window.open(process.env.PUBLIC_URL +"/mi-documento.pdf")}
                   
                     radius="lg"
                     size="xs" 
